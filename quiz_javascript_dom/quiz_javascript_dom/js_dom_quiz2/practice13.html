@@ -28,12 +28,40 @@
     <script>
       // TODO: practice13_설명.png 이미지의 조건을 만족하는 js 코드 작성
       // cal(), reset() 함수를 미리 정의해두었습니다.
-
       // [계산] 버튼 클릭시 cal() 함수가 실행되도록 인라인 방식으로 미리 설정해 두었습니다.
-      function cal() {}
+      function cal() {
+        const value1 = Number(document.getElementById('value1').value);
+        const value2 = Number(document.getElementById('value2').value);
+        const operator = document.getElementById('operator').value;
+        let result;
+        if(value1 && value2 && operator){
+          if(operator === '+'){
+            result = value1 + value2;
+          }else if(operator === '-'){
+            result = value1 - value2
+          }else if(operator === '*'){
+            result = value1 * value2
+          }else if(operator === '/'){
+            result = value1 / value2
+          }else{
+            alert('+, -, *, / 중 입력해주세요');
+            result='';
+          }
+        }else{
+          alert('값을 입력해 주세요');
+          result='';  
+        }
+
+        document.getElementById('result').value = result;
+      }
 
       // [초기화] 버튼 클릭시 reset() 함수가 실행되도록 인라인 방식으로 미리 설정해 두었습니다.
-      function reset() {}
+      function reset() {
+        value1='';
+        value2='';
+        operator='';
+        document.getElementById('result').value = '';
+      }
     </script>
   </body>
 </html>

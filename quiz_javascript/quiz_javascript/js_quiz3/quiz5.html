@@ -90,23 +90,32 @@
     <br />
 
     <script>
-      function drawStars() {
-        // TODO: drawStars() 함수 내부 코드를 채워주세요.
+      function drawStars(lines) {
+        for (let i=lines; i>0; i--) {
+          let star = '*'.repeat(i);
+          console.log(star);
+        }
       }
 
-      function drawStars2() {
-        // TODO: drawStars2() 함수 내부 코드를 채워주세요.
+      function drawStars2(lines) {
+        for(let i=1;i<=lines;i++){
+          let star = ' '.repeat(lines-i)+'*'.repeat(i);
+          console.log(star);
+        }
       }
 
-      function drawStars3() {
-        // TODO: drawStars3() 함수 내부 코드를 채워주세요.
+      function drawStars3(lines) {
+        for(let i=1;i<=lines;i++){
+          let star = ' '.repeat(lines-i)+'*'.repeat(i*2-1);
+          console.log(star);
+        }
       }
 
-      function drawStars4() {
+      function drawStars4(lines) {
         // TODO: drawStars4() 함수 내부 코드를 채워주세요.
       }
 
-      function drawStars5() {
+      function drawStars5(lines) {
         // TODO: drawStars5() 함수 내부 코드를 채워주세요.
       }
 
@@ -116,6 +125,7 @@
 
       // drawStars2(3);
       // drawStars2(5);
+
 
       // drawStars3(3);
       // drawStars3(5);

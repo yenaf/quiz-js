@@ -53,7 +53,22 @@
     </ul>
 
     <script>
-        // TODO: 문제 조건을 만족하는 js 코드 작성
+      charger={
+        id : 21,
+        name : '초고속충전기',
+        seller : 'jane',
+        isStock : true,
+        colors : ['black', 'white', 'skyblue', 'yellow'],
+        orders : Math.floor(Math.random()*90)+10,
+      }
+      console.log(`
+        === 상품 소개 ===
+        고유 번호 : ${charger.id}
+        상품명 : ${charger.name}
+        판매자 : ${charger.seller}
+        색상 : ${charger.colors}
+        주문량 : ${charger.orders}
+      `);
     </script> 
   </body>
 </html>

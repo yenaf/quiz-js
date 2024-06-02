@@ -37,7 +37,14 @@
     </div>
 
     <script>
-      // TODO: 문제 조건을 만족하는 js 코드 작성
+      let songTitle = document.querySelector('.container');
+      let spans = document.querySelectorAll('span');
+      for(let i=0;i<spans.length;i++){
+        spans[i].style.color = 'blueviolet';
+        spans[i].style.fontWeight = 'bold';
+      }
+      songTitle.style.backgroundColor='#eee';
+      songTitle.style.textAlign='center';
     </script>
   </body>
 </html>
